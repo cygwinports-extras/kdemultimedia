@@ -1,0 +1,8 @@
+category: Audio KDE
+requires: cygwin kdelibs4 qt3 libogg0 libtheora0 libvorbis0 libvorbisfile3 taglib
+sdesc: "KDE multimedia suite (common plugins and data)"
+ldesc: "KDE multimedia suite:
+* juk: jukebox, tagger and music collection manager.
+* kmid: a standalone and embeddable midi player, includes a karaoke-mode
+* kmix: the audio mixer as a standalone program and Kicker applet
+* libkcddb: a library for retrieving and sending cddb information"

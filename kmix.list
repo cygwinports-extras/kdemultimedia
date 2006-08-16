@@ -1,0 +1,12 @@
+usr/bin/cygkdeinit_kmix*
+usr/bin/kmix.exe
+usr/bin/kmixctrl.exe
+usr/lib/kde3/kmix*
+usr/lib/libkdeinit_kmix*
+usr/share/applications/kde/kmix.desktop
+usr/share/apps/kicker/applets/kmixapplet.desktop
+usr/share/apps/kmix/
+usr/share/autostart/restore_kmix_volumes.desktop
+usr/share/doc/HTML/en/kmix/
+usr/share/icons/hicolor/*/apps/kmix.png
+usr/share/services/kmixctrl_restore.desktop
