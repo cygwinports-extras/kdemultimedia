@@ -1,0 +1,5 @@
+usr/lib/cygarts_audiofile.dll
+usr/lib/libarts_audiofile.la
+usr/lib/mcop/Arts/audiofilePlayObject.mcopclass
+usr/lib/mcop/audiofilearts.mcopclass
+usr/lib/mcop/audiofilearts.mcoptype

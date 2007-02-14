@@ -1,7 +1,7 @@
 category: Audio KDE
-requires: cygwin kdelibs4 qt3 kicker
+requires: cygwin kappfinder
 external-source: kdemultimedia
-sdesc: "KDE audio mixer"
+sdesc: "KDE multimedia application menus"
 ldesc: "KDE multimedia suite:
 * arts: a versatily multimedia system the consists of various little
         building blocks that you (or an application) can combine in

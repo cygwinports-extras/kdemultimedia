@@ -1,9 +1,15 @@
 category: Audio KDE
-requires: cygwin kdelibs4 qt3 glib2 gstreamer010 gstreamer010-plugins-base gstreamer010-plugins-flac gstreamer010-plugins-ogg gstreamer010-plugins-vorbis gstreamer010-plugins-musepack gstreamer010-plugins-oss taglib kdemultimedia
+requires: cygwin akode arts kdelibs4 qt3 glib2 gstreamer010 gstreamer010-plugins-base gstreamer010-plugins-flac gstreamer010-plugins-ogg gstreamer010-plugins-vorbis gstreamer010-plugins-musepack gstreamer010-plugins-oss taglib
 external-source: kdemultimedia
 sdesc: "KDE jukebox, tagger and music collection manager"
 ldesc: "KDE multimedia suite:
-* juk: jukebox, tagger and music collection manager.
-* kmid: a standalone and embeddable midi player, includes a karaoke-mode
+* arts: a versatily multimedia system the consists of various little
+        building blocks that you (or an application) can combine in
+        almost arbitrary ways to create sound and video processing pipes
+* kaboodle: light media player
+* kmid: A standalone and embeddable midi player, includes a karaoke-mode
 * kmix: the audio mixer as a standalone program and Kicker applet
-* libkcddb: a library for retrieving and sending cddb information"
+* krec: A recording frontend using aRts
+* libkcddb: a library for retrieving and sending cddb information
+* noatun: a multimedia player for sound and movies, very extensible due to
+          it's plugin interface"

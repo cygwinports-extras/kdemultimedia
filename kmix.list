@@ -10,3 +10,4 @@ usr/share/autostart/restore_kmix_volumes.desktop
 usr/share/doc/HTML/en/kmix/
 usr/share/icons/hicolor/*/apps/kmix.png
 usr/share/services/kmixctrl_restore.desktop
+usr/share/doc/kmix-*/

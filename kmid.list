@@ -10,3 +10,4 @@ usr/share/doc/HTML/en/kmid/
 usr/share/icons/hicolor/*/apps/kmid.png
 usr/share/mimelnk/audio/x-karaoke.desktop
 usr/share/servicetypes/audiomidi.desktop
+usr/share/doc/kmid-*/
