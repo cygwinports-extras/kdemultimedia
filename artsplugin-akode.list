@@ -2,6 +2,7 @@ usr/lib/cygarts_akode.dll
 usr/lib/libarts_akode.la
 usr/lib/mcop/akodearts.mcopclass
 usr/lib/mcop/akodearts.mcoptype
+usr/lib/mcop/akodeFFMPEGPlayObject.mcopclass
 usr/lib/mcop/akodeMPCPlayObject.mcopclass
 usr/lib/mcop/akodeMPEGPlayObject.mcopclass
 usr/lib/mcop/akodePlayObject.mcopclass
