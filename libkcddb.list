@@ -6,3 +6,4 @@ usr/share/applications/kde/libkcddb.desktop
 usr/share/config.kcfg/libkcddb.kcfg
 usr/share/apps/kconf_update/kcmcddb-emailsettings.upd
 usr/share/doc/libkcddb-*/
+usr/share/doc/Cygwin/libkcddb-*.README

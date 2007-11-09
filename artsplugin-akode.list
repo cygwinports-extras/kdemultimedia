@@ -9,3 +9,4 @@ usr/lib/mcop/akodePlayObject.mcopclass
 usr/lib/mcop/akodeSpeexStreamPlayObject.mcopclass
 usr/lib/mcop/akodeVorbisStreamPlayObject.mcopclass
 usr/lib/mcop/akodeXiphPlayObject.mcopclass
+usr/share/doc/Cygwin/artsplugin-akode-*.README

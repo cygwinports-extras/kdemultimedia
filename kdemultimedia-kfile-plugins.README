@@ -1,0 +1,124 @@
+kdemultimedia-kfile-plugins
+------------------------------------------
+KDE multimedia file plugins
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  kdelibs4-3.5.8-1
+  libogg0-1.1.3-1
+  libtheora0-1.0beta2-1
+  libvorbis0-1.2.0-1
+  libvorbisfile3-1.2.0-1
+  qt3-3.3.8-3
+  taglib-1.4-2
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  perl-5.8.7-5
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/3.5.8/src/
+
+-------------------------------------------
+
+Build instructions:
+  unpack kdemultimedia-3.5.8-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./kdemultimedia-3.5.8-X.cygport all
+
+This will create:
+  /usr/src/kdemultimedia-3.5.8-X-src.tar.bz2
+  /usr/src/kdemultimedia-3.5.8-X.tar.bz2
+
+  /usr/src/artsplugin-akode-3.5.8-X.tar.bz2
+  /usr/src/artsplugin-audiofile-3.5.8-X.tar.bz2
+  /usr/src/artsplugin-oggvorbis-3.5.8-X.tar.bz2
+  /usr/src/artsplugin-xine-3.5.8-X.tar.bz2
+  /usr/src/juk-3.5.8-X.tar.bz2
+  /usr/src/kaboodle-3.5.8-X.tar.bz2
+  /usr/src/kdemultimedia-arts-3.5.8-X.tar.bz2
+  /usr/src/kdemultimedia-kappfinder-data-3.5.8-X.tar.bz2
+  /usr/src/kdemultimedia-kfile-plugins-3.5.8-X.tar.bz2
+  /usr/src/kmid-3.5.8-X.tar.bz2
+  /usr/src/kmix-3.5.8-X.tar.bz2
+  /usr/src/krec-3.5.8-X.tar.bz2
+  /usr/src/libkcddb-3.5.8-X.tar.bz2
+  /usr/src/noatun-3.5.8-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(kdemultimedia-kfile-plugins)
+  /usr/lib/kde3/kfile_au.dll
+  /usr/lib/kde3/kfile_au.la
+  /usr/lib/kde3/kfile_avi.dll
+  /usr/lib/kde3/kfile_avi.la
+  /usr/lib/kde3/kfile_flac.dll
+  /usr/lib/kde3/kfile_flac.la
+  /usr/lib/kde3/kfile_m3u.dll
+  /usr/lib/kde3/kfile_m3u.la
+  /usr/lib/kde3/kfile_mp3.dll
+  /usr/lib/kde3/kfile_mp3.la
+  /usr/lib/kde3/kfile_mpc.dll
+  /usr/lib/kde3/kfile_mpc.la
+  /usr/lib/kde3/kfile_mpeg.dll
+  /usr/lib/kde3/kfile_mpeg.la
+  /usr/lib/kde3/kfile_ogg.dll
+  /usr/lib/kde3/kfile_ogg.la
+  /usr/lib/kde3/kfile_sid.dll
+  /usr/lib/kde3/kfile_sid.la
+  /usr/lib/kde3/kfile_theora.dll
+  /usr/lib/kde3/kfile_theora.la
+  /usr/lib/kde3/kfile_wav.dll
+  /usr/lib/kde3/kfile_wav.la
+  /usr/share/services/kfile_au.desktop
+  /usr/share/services/kfile_avi.desktop
+  /usr/share/services/kfile_flac.desktop
+  /usr/share/services/kfile_m3u.desktop
+  /usr/share/services/kfile_mp3.desktop
+  /usr/share/services/kfile_mpc.desktop
+  /usr/share/services/kfile_mpeg.desktop
+  /usr/share/services/kfile_ogg.desktop
+  /usr/share/services/kfile_sid.desktop
+  /usr/share/services/kfile_theora.desktop
+  /usr/share/services/kfile_wav.desktop
+
+------------------
+
+Port Notes:
+
+----- version 3.5.8-1 -----
+Version bump.
+
+----- version 3.5.7-1 -----
+Version bump.
+
+----- version 3.5.6-1 -----
+Version bump with aRts support.
+
+----- version 3.5.5-1 -----
+Version bump.
+
+----- version 3.5.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

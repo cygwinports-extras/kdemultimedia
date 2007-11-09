@@ -8,3 +8,4 @@ usr/share/icons/hicolor/*/apps/kaboodle.png
 usr/share/services/kaboodleengine.desktop
 usr/share/services/kaboodle_component.desktop
 usr/share/doc/kaboodle-*/
+usr/share/doc/Cygwin/kaboodle-*.README
