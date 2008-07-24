@@ -1,0 +1,7 @@
+inherit kde4
+
+PKG_NAMES="${PN} libkcddb4 libkcddb-devel libkcompactdisc4 libkcompactdisc-devel
+           dragon juk kmix kscd"
+
+# dragonplayer/src/dbus/[Rr]ootDbusHandler.h
+USE_MANAGED_MOUNT=1
