@@ -1,7 +1,7 @@
 category: Audio KDE
-requires: cygwin kdelibs4 qt3
+requires: cygwin kdelibs4 libqt3 libogg0 libtheora0 libvorbis0 libvorbisfile3 libtag1
 external-source: kdemultimedia
-sdesc: "KDE CDDB library"
+sdesc: "KDE multimedia KIO plugins"
 ldesc: "KDE multimedia suite:
 * arts: a versatily multimedia system the consists of various little
         building blocks that you (or an application) can combine in

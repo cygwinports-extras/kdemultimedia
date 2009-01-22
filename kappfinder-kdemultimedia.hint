@@ -1,7 +1,7 @@
-category: Audio Video KDE
-requires: cygwin arts kdelibs4 artsbuilder libqt3
+category: Audio KDE
+requires: kappfinder
 external-source: kdemultimedia
-sdesc: "KDE media player"
+sdesc: "KDE multimedia application menus"
 ldesc: "KDE multimedia suite:
 * arts: a versatily multimedia system the consists of various little
         building blocks that you (or an application) can combine in

@@ -1,0 +1,37 @@
+inherit kde3
+
+PATCH_URI="
+	3.5.10-subdir-conditionals.patch
+	3.5.10-no-undefined.patch
+	3.5.10-parallel-make.patch
+"
+
+# disabled becuase asm does not compile; Gentoo doesn't build these either
+DO_NOT_COMPILE="mpeglib mpeglib_artsplug mpg123_artsplugin"
+
+PKG_NAMES="${PN} kappfinder-${PN} kde3-kfile-plugins-${PN}
+			artsbuilder artsplugin-akode artsplugin-audiofile
+			artsplugin-oggvorbis artsplugin-xine
+			juk kaboodle kmid kmix krec noatun libkcddb1 libkcddb-devel"
+kdemultimedia_CONTENTS="etc/postinstall/ usr/share/doc/Cygwin/${P}.README usr/share/doc/${P}/"
+kde3_kfile_plugins_kdemultimedia_CONTENTS="usr/lib/kde3/kfile_*.* usr/share/services/kfile_*.desktop"
+libkcddb_devel_CONTENTS="usr/include/kde/libkcddb/ usr/lib/libkcddb.*"
+PKG_IGNORE="usr/share/doc/HTML/en/kaudiocreator/
+            usr/share/doc/HTML/en/kioslave/
+            usr/share/doc/HTML/en/kscd/"
+
+# musicbrainz: tunepimp-0.4
+# ossaudio: no /dev/mixer
+CYGCONF_ARGS="
+	--with-akode
+	--with-audiofile
+	--with-gstreamer
+	--with-lame
+	--with-taglib
+	--with-theora
+	--with-vorbis
+	--with-xine
+	--without-cdparanoia
+	--without-musicbrainz
+	--without-ossaudio
+"

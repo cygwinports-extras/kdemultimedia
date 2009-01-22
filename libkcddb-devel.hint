@@ -1,7 +1,7 @@
 category: Audio KDE
-requires: cygwin kappfinder
+requires: cygwin kdelibs-devel libqt3-devel libkcddb1
 external-source: kdemultimedia
-sdesc: "KDE multimedia application menus"
+sdesc: "KDE CDDB library (development)"
 ldesc: "KDE multimedia suite:
 * arts: a versatily multimedia system the consists of various little
         building blocks that you (or an application) can combine in

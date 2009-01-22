@@ -1,5 +1,5 @@
 category: Audio Video KDE
-requires: kdemultimedia-arts kdemultimedia-kappfinder-data kdemultimedia-kfile-plugins artsplugin-akode artsplugin-audiofile artsplugin-oggvorbis artsplugin-xine juk kaboodle kmid kmix krec libkcddb noatun
+requires: artsbuilder kappfinder-kdemultimedia kde3-kfile-plugins-kdemultimedia artsplugin-akode artsplugin-audiofile artsplugin-oggvorbis artsplugin-xine juk kaboodle kmid kmix krec noatun
 sdesc: "KDE multimedia suite (meta-package)"
 ldesc: "KDE multimedia suite:
 * arts: a versatily multimedia system the consists of various little
