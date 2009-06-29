@@ -1,5 +1,5 @@
 category: Audio Video KDE
-requires: cygwin arts kdelibs4 artsbuilder libqt3
+requires: arts kdelibs4 artsbuilder libqt3
 external-source: kdemultimedia
 sdesc: "KDE media player"
 ldesc: "KDE multimedia suite:

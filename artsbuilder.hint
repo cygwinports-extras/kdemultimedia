@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: cygwin arts kdelibs4 libqt3
+requires: arts kdelibs4 libqt3
 external-source: kdemultimedia
 sdesc: "KDE multimedia aRts addons"
 ldesc: "KDE multimedia suite:

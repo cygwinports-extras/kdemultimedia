@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: cygwin arts libX11_6 libXext6 libxine1
+requires: arts libX11_6 libXext6 libxine1
 external-source: kdemultimedia
 sdesc: "aRts xine plugin"
 ldesc: "KDE multimedia suite:

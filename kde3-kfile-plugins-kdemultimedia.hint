@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: cygwin kdelibs4 libqt3 libogg0 libtheora0 libvorbis0 libvorbisfile3 libtag1
+requires: kdelibs4 libqt3 libogg0 libtheora0 libvorbis0 libvorbisfile3 libtag1
 external-source: kdemultimedia
 sdesc: "KDE multimedia KIO plugins"
 ldesc: "KDE multimedia suite:

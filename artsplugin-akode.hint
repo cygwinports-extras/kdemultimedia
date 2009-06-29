@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: cygwin arts libakode2
+requires: arts libakode2
 external-source: kdemultimedia
 sdesc: "aRts akode plugin"
 ldesc: "KDE multimedia suite:

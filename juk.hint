@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: cygwin libakode2 libarts1 kdelibs4 libqt3 libglib2.0_0 libgstreamer0.10_0 gstreamer010-plugins-base gstreamer010-plugins-flac gstreamer010-plugins-ogg gstreamer010-plugins-vorbis gstreamer010-plugins-musepack gstreamer010-plugins-oss libtag1
+requires: libakode2 libarts1 kdelibs4 libqt3 libglib2.0_0 libgstreamer0.10_0 gstreamer010-plugins-base gstreamer010-plugins-flac gstreamer010-plugins-ogg gstreamer010-plugins-vorbis gstreamer010-plugins-musepack gstreamer010-plugins-oss libtag1
 external-source: kdemultimedia
 sdesc: "KDE jukebox, tagger and music collection manager"
 ldesc: "KDE multimedia suite:

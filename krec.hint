@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: cygwin arts kdelibs4 artsbuilder libmp3lame0 libogg0 libvorbis0 libvorbisenc2 libqt3
+requires: arts kdelibs4 artsbuilder libmp3lame0 libogg0 libvorbis0 libvorbisenc2 libqt3
 external-source: kdemultimedia
 sdesc: "KDE aRts recording frontend"
 ldesc: "KDE multimedia suite:

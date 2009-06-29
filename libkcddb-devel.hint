@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: cygwin kdelibs-devel libqt3-devel libkcddb1
+requires: kdelibs-devel libqt3-devel libkcddb1
 external-source: kdemultimedia
 sdesc: "KDE CDDB library (development)"
 ldesc: "KDE multimedia suite:
