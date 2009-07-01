@@ -1,7 +1,7 @@
 inherit kde4
 
+PATCH_URI="4.2.4-kmix-install.patch
+           4.2.4-libkcompactdisc-cygwin.patch"
+
 PKG_NAMES="${PN} libkcddb4 libkcddb-devel libkcompactdisc4 libkcompactdisc-devel
            dragon juk kmix kscd"
-
-# dragonplayer/src/dbus/[Rr]ootDbusHandler.h
-USE_MANAGED_MOUNT=1

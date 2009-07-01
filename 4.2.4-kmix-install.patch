@@ -1,0 +1,20 @@
+--- origsrc/kdemultimedia-4.2.4/kmix/CMakeLists.txt	2009-01-06 11:28:07.000000000 -0600
++++ src/kdemultimedia-4.2.4/kmix/CMakeLists.txt	2009-06-14 19:49:00.829402500 -0500
+@@ -54,7 +54,7 @@ if (HAVE_LIBASOUND2)
+     target_link_libraries(kdeinit_kmix ${ASOUND_LIBRARY})
+ endif (HAVE_LIBASOUND2)
+ 
+-install(TARGETS kdeinit_kmix  DESTINATION ${LIB_INSTALL_DIR} )
++install(TARGETS kdeinit_kmix  DESTINATION ${INSTALL_TARGETS_DEFAULT_ARGS} )
+ 
+ target_link_libraries( kmix kdeinit_kmix )
+ install(TARGETS kmix  ${INSTALL_TARGETS_DEFAULT_ARGS} )
+@@ -82,7 +82,7 @@ if (HAVE_LIBASOUND2)
+     target_link_libraries(kdeinit_kmixctrl ${ASOUND_LIBRARY})
+ endif (HAVE_LIBASOUND2)
+ 
+-install(TARGETS kdeinit_kmixctrl  DESTINATION ${LIB_INSTALL_DIR} )
++install(TARGETS kdeinit_kmixctrl  DESTINATION ${INSTALL_TARGETS_DEFAULT_ARGS} )
+ 
+ target_link_libraries( kmixctrl kdeinit_kmixctrl )
+ install(TARGETS kmixctrl ${INSTALL_TARGETS_DEFAULT_ARGS} )
