@@ -1,9 +1,7 @@
 usr/bin/juk.exe
-usr/share/applications/kde/juk.desktop
-usr/share/apps/juk/
-usr/share/apps/konqueror/servicemenus/jukservicemenu.desktop
+usr/share/applications/kde4/juk.desktop
+usr/share/dbus-1/interfaces/org.kde.juk.*
 usr/share/doc/HTML/en/juk/
-usr/share/icons/crystalsvg/22x22/actions/juk_dock.png
-usr/share/icons/hicolor/*/apps/juk.png
-usr/share/doc/juk-*/
-usr/share/doc/Cygwin/juk-*.README
+usr/share/doc/juk/
+usr/share/icons/hicolor/*/apps/juk.*
+usr/share/kde4/apps/juk/

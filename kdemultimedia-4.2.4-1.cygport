@@ -3,5 +3,18 @@ inherit kde4
 PATCH_URI="4.2.4-kmix-install.patch
            4.2.4-libkcompactdisc-cygwin.patch"
 
-PKG_NAMES="${PN} libkcddb4 libkcddb-devel libkcompactdisc4 libkcompactdisc-devel
-           dragon juk kmix kscd"
+DO_NOT_COMPILE="kscd"
+
+PKG_NAMES="${PN} dragonplayer juk kmix"
+
+kdemultimedia_CONTENTS="etc/postinstall/ usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
+
+for l in libkcddb libkcompactdisc
+do
+	PKG_NAMES+=" ${l}4 ${l}4-devel"
+	declare ${l}4_CONTENTS="usr/bin/cyg${l#lib}-4.dll"
+	declare ${l}4_devel_CONTENTS="usr/include/kde4/${l}/ usr/lib/kde4/lib/${l}.*"
+done
+libkcddb4_CONTENTS+=" usr/lib/kde4/kcm_cddb.dll usr/share/kde4/apps/kconf_update/kcmcddb-*
+                      usr/share/kde4/config.kcfg/libkcddb.kcfg usr/share/kde4/services/libkcddb.desktop"
+PKG_IGNORE="usr/share/doc/HTML/en/kioslave/audiocd/ usr/share/doc/HTML/en/kscd/"
