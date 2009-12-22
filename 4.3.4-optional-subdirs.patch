@@ -1,0 +1,13 @@
+mplayerthumbs requires kdelibs-4.3
+
+--- origsrc/kdemultimedia-4.3.4/CMakeLists.txt	2009-05-19 07:06:59.000000000 -0500
++++ src/kdemultimedia-4.3.4/CMakeLists.txt	2009-12-21 22:17:44.198861800 -0600
+@@ -39,7 +39,7 @@ add_subdirectory(cmake)
+ macro_optional_add_subdirectory(doc)
+ add_subdirectory(libkcddb)
+ add_subdirectory(libkcompactdisc)
+-add_subdirectory(mplayerthumbs)
++macro_optional_add_subdirectory(mplayerthumbs)
+ 
+ if (TAGLIB_FOUND)
+   macro_optional_add_subdirectory(juk)

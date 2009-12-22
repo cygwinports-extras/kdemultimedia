@@ -1,9 +1,11 @@
 inherit kde4
 
 PATCH_URI="4.2.4-kmix-install.patch
-           4.2.4-libkcompactdisc-cygwin.patch"
+           4.2.4-libkcompactdisc-cygwin.patch
+           4.3.4-optional-subdirs.patch"
 
-DO_NOT_COMPILE="kscd"
+# mplayerthumbs: requires kdelibs-4.3
+DO_NOT_COMPILE="kscd mplayerthumbs"
 
 PKG_NAMES="${PN} dragonplayer juk kmix"
 
