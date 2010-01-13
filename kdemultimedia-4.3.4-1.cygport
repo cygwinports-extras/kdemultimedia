@@ -1,22 +1,18 @@
 inherit kde4
 
 PATCH_URI="4.2.4-kmix-install.patch
-           4.2.4-libkcompactdisc-cygwin.patch
-           4.3.4-optional-subdirs.patch"
+           4.2.4-libkcompactdisc-cygwin.patch"
 
-# mplayerthumbs: requires kdelibs-4.3
-DO_NOT_COMPILE="kscd mplayerthumbs"
+DO_NOT_COMPILE="kscd"
 
-PKG_NAMES="${PN} dragonplayer juk kmix"
+PKG_NAMES="${PN} dragonplayer juk kmix mplayerthumbs
+           libkcddb4 libkcddb4-devel libkcompactdisc4 libkcompactdisc4-devel"
 
 kdemultimedia_CONTENTS="etc/postinstall/ usr/share/doc/Cygwin/ usr/share/doc/${PN}/"
-
-for l in libkcddb libkcompactdisc
-do
-	PKG_NAMES+=" ${l}4 ${l}4-devel"
-	declare ${l}4_CONTENTS="usr/bin/cyg${l#lib}-4.dll"
-	declare ${l}4_devel_CONTENTS="usr/include/kde4/${l}/ usr/lib/kde4/lib/${l}.*"
-done
-libkcddb4_CONTENTS+=" usr/lib/kde4/kcm_cddb.dll usr/share/kde4/apps/kconf_update/kcmcddb-*
-                      usr/share/kde4/config.kcfg/libkcddb.kcfg usr/share/kde4/services/libkcddb.desktop"
+libkcddb4_CONTENTS="usr/bin/cygkcddb-4.dll usr/lib/kde4/kcm_cddb.dll
+                    usr/share/kde4/apps/kconf_update/kcmcddb-*
+                    usr/share/kde4/config.kcfg/libkcddb.kcfg usr/share/kde4/services/libkcddb.desktop"
+libkcddb4_devel_CONTENTS="usr/include/kde4/libkcddb/ usr/lib/kde4/lib/libkcddb.*"
+libkcompactdisc4_CONTENTS="usr/bin/cygkcompactdisc-4.dll"
+libkcompactdisc4_devel_CONTENTS="usr/include/kde4/libkcompactdisc/ usr/lib/kde4/lib/libkcompactdisc.*"
 PKG_IGNORE="usr/share/doc/HTML/en/kioslave/audiocd/ usr/share/doc/HTML/en/kscd/"

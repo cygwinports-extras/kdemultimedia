@@ -4,11 +4,12 @@ KDE multimedia suite:
 * dragonplayer: video player that has a usability focus
 * juk: jukebox, tagger and music collection manager
 * kmix: audio mixer
+* mplayerthumbs: video thumbnailer
 
 Runtime requirements:
-  cygwin-1.7.0-67
+  cygwin-1.7.1-1
   libgcc1-4.3.4-3
-  libkdecore5-4.2.4-1
+  libkdecore5-4.3.4-1
   libknotificationitem1_1-4.3.4-1
   libmusicbrainz4-2.1.5-10
   libphonon4-4.3.1-2
@@ -21,6 +22,7 @@ Runtime requirements:
   libstdc++6-4.3.4-3
   libtag1-1.5-10
   libxine1-1.1.16.3-1
+  mplayer
   phonon-kde-4.2.4-1
   phonon-xine-4.3.1-2
 
@@ -60,6 +62,7 @@ This will create:
   /usr/src/libkcddb4-4.3.4-X.tar.bz2
   /usr/src/libkcompactdisc4-devel-4.3.4-X.tar.bz2
   /usr/src/libkcompactdisc4-4.3.4-X.tar.bz2
+  /usr/src/mplayerthumbs-4.3.4-X.tar.bz2
 
 -------------------------------------------
 
