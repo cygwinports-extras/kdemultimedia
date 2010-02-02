@@ -9,8 +9,8 @@ KDE multimedia suite:
 Runtime requirements:
   cygwin-1.7.1-1
   libgcc1-4.3.4-3
-  libkdecore5-4.3.4-1
-  libknotificationitem1_1-4.3.4-1
+  libkdecore5-4.3.5-1
+  libknotificationitem1_1-4.3.5-1
   libmusicbrainz4-2.1.5-10
   libphonon4-4.3.1-2
   libQt3Support4-4.5.3-2
@@ -41,32 +41,35 @@ Canonical website:
   http://www.kde.org/
 
 Canonical download:
-  ftp://ftp.kde.org/pub/kde/stable/4.3.4/
+  ftp://ftp.kde.org/pub/kde/stable/4.3.5/
 
 -------------------------------------------
 
 Build instructions:
-  unpack kdemultimedia-4.3.4-X-src.tar.bz2
+  unpack kdemultimedia-4.3.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./kdemultimedia-4.3.4-X.cygport all
+  cygport ./kdemultimedia-4.3.5-X.cygport all
 
 This will create:
-  /usr/src/dragonplayer-4.3.4-X.tar.bz2
-  /usr/src/juk-4.3.4-X.tar.bz2
-  /usr/src/kdemultimedia-4.3.4-X-src.tar.bz2
-  /usr/src/kdemultimedia-4.3.4-X.tar.bz2
-  /usr/src/kmix-4.3.4-X.tar.bz2
-  /usr/src/libkcddb4-devel-4.3.4-X.tar.bz2
-  /usr/src/libkcddb4-4.3.4-X.tar.bz2
-  /usr/src/libkcompactdisc4-devel-4.3.4-X.tar.bz2
-  /usr/src/libkcompactdisc4-4.3.4-X.tar.bz2
-  /usr/src/mplayerthumbs-4.3.4-X.tar.bz2
+  /usr/src/dragonplayer-4.3.5-X.tar.bz2
+  /usr/src/juk-4.3.5-X.tar.bz2
+  /usr/src/kdemultimedia-4.3.5-X-src.tar.bz2
+  /usr/src/kdemultimedia-4.3.5-X.tar.bz2
+  /usr/src/kmix-4.3.5-X.tar.bz2
+  /usr/src/libkcddb4-devel-4.3.5-X.tar.bz2
+  /usr/src/libkcddb4-4.3.5-X.tar.bz2
+  /usr/src/libkcompactdisc4-devel-4.3.5-X.tar.bz2
+  /usr/src/libkcompactdisc4-4.3.5-X.tar.bz2
+  /usr/src/mplayerthumbs-4.3.5-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 4.3.5-1 -----
+Version bump.
 
 ----- version 4.3.4-1 -----
 Version bump for KDE 4.3.
