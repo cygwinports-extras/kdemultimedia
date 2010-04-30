@@ -15,4 +15,4 @@ libkcddb4_CONTENTS="usr/bin/cygkcddb-4.dll usr/lib/kde4/kcm_cddb.dll
 libkcddb4_devel_CONTENTS="usr/include/kde4/libkcddb/ usr/lib/kde4/lib/libkcddb.*"
 libkcompactdisc4_CONTENTS="usr/bin/cygkcompactdisc-4.dll"
 libkcompactdisc4_devel_CONTENTS="usr/include/kde4/libkcompactdisc/ usr/lib/kde4/lib/libkcompactdisc.*"
-PKG_IGNORE="usr/share/doc/HTML/en/kioslave/audiocd/ usr/share/doc/HTML/en/kscd/"
+PKG_IGNORE="usr/share/doc/HTML/en/kioslave/audiocd/ usr/share/doc/HTML/en/kcontrol/"
