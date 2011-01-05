@@ -1,0 +1,11 @@
+usr/bin/mplayerthumbsconfig.exe
+usr/lib/kde4/ffmpegthumbs.dll
+usr/lib/kde4/kcm_cddb.dll
+usr/lib/kde4/videopreview.dll
+usr/share/kde4/apps/kconf_update/kcmcddb-*
+usr/share/kde4/apps/videothumbnail/
+usr/share/kde4/config.kcfg/libkcddb.kcfg
+usr/share/kde4/config.kcfg/mplayerthumbs.kcfg
+usr/share/kde4/services/ffmpegthumbs.desktop
+usr/share/kde4/services/libkcddb.desktop
+usr/share/kde4/services/videopreview.desktop

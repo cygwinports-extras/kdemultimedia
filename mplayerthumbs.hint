@@ -1,5 +1,0 @@
-category: KDE Video
-requires: libgcc1 libkdecore5 libQtCore4 libQtGui4 libstdc++6 mplayer
-external-source: kdemultimedia
-sdesc: "KDE video thumbnailer"
-ldesc: "KDE multimedia suite"

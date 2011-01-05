@@ -1,8 +1,7 @@
 category: Audio Video KDE
-requires: dragonplayer juk kmix mplayerthumbs
+requires: dragonplayer juk kmix kde4-multimedia-plugins
 sdesc: "KDE multimedia suite (meta-package)"
 ldesc: "KDE multimedia suite:
 * dragonplayer: video player that has a usability focus
 * juk: jukebox, tagger and music collection manager.
-* kmix: audio mixer
-* mplayerthumbs: video thumbnailer"
+* kmix: audio mixer"

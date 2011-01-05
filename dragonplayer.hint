@@ -1,5 +1,5 @@
 category: KDE Audio Video
 requires: libgcc1 libkdecore5 libphonon4 libQtCore4 libQtDBus4 libQtGui4 libstdc++6 libxine1 phonon-kde phonon-xine
 external-source: kdemultimedia
-sdesc: "KDE video player"
+sdesc: "KDE Xine video player"
 ldesc: "KDE multimedia suite"
