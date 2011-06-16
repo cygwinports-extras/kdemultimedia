@@ -1,4 +1,5 @@
 usr/bin/*kmix*
+usr/lib/kde4/kded_kmixd.dll
 usr/share/applications/kde4/kmix.desktop
 usr/share/autostart/*kmix*.desktop
 usr/share/dbus-1/interfaces/org.kde.KMix.xml
@@ -6,4 +7,5 @@ usr/share/doc/HTML/en/kmix/
 usr/share/doc/kmix/
 usr/share/icons/hicolor/*/apps/kmix.*
 usr/share/kde4/apps/kmix/
+usr/share/kde4/services/kded/kmixd.desktop
 usr/share/kde4/services/kmixctrl_restore.desktop

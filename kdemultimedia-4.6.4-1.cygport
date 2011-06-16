@@ -14,3 +14,5 @@ libkcddb_devel_CONTENTS="usr/include/kde4/libkcddb/ usr/lib/libkcddb.*"
 libkcompactdisc4_CONTENTS="usr/bin/cygkcompactdisc-4.dll"
 libkcompactdisc_devel_CONTENTS="usr/include/kde4/libkcompactdisc/ usr/lib/libkcompactdisc.*"
 PKG_IGNORE="usr/share/doc/HTML/en/kioslave/audiocd/ usr/share/doc/HTML/en/kcontrol/"
+
+CYGCMAKE_ARGS="-DWITH_Xine=OFF"
