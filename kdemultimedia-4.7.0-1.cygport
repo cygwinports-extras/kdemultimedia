@@ -1,6 +1,6 @@
 inherit kde4
 
-PATCH_URI="4.2.4-kmix-install.patch
+PATCH_URI="4.7.0-kmix-install.patch
            4.2.4-libkcompactdisc-cygwin.patch"
 
 DO_NOT_COMPILE="kscd"
