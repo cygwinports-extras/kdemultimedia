@@ -1,5 +1,0 @@
-category: Audio KDE
-requires: libgcc1 libkdecore5 libmusicbrainz4 libQt3Support4 libQtCore4 libQtGui4 libQtNetwork4 libstdc++6
-external-source: kdemultimedia
-sdesc: "KDE CDDB library (runtime)"
-ldesc: "KDE multimedia suite"

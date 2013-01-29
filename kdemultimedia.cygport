@@ -1,0 +1,78 @@
+inherit kde4
+
+NAME="kdemultimedia"
+VERSION=4.8.5
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="KDE multimedia suite"
+
+PATCH_URI="
+	mirror://portage/kde-base/ffmpegthumbs/files/ffmpegthumbs-4.8.1-ffmpeg.patch
+	4.7.0-kmix-install.patch
+	4.2.4-libkcompactdisc-cygwin.patch
+	4.8.5-libcdio.patch
+"
+
+DO_NOT_COMPILE="kscd"
+
+PKG_NAMES="${PN} kde4-multimedia-plugins dragonplayer juk kmix
+           libkcddb4 libkcddb-devel libkcompactdisc4 libkcompactdisc-devel"
+
+kdemultimedia_CONTENTS="etc/postinstall/ usr/share/doc/${PN}/"
+dragonplayer_SUMMARY="KDE Xine video player"
+dragonplayer_CONTENTS="usr/bin/dragon.exe usr/lib/kde4/dragonpart.dll
+	usr/share/applications/kde4/dragonplayer.desktop
+	usr/share/doc/HTML/en/dragonplayer/ usr/share/doc/dragonplayer/
+	usr/share/icons/hicolor/*/apps/dragonplayer.*
+	usr/share/icons/oxygen/*/actions/player-volume-muted.*
+	usr/share/kde4/apps/dragonplayer/
+	usr/share/kde4/apps/solid/actions/dragonplayer-opendvd.desktop
+	usr/share/kde4/config/dragonplayerrc
+	usr/share/kde4/services/dragonplayer_part.desktop
+	usr/share/kde4/services/ServiceMenus/dragonplayer_play_dvd.desktop"
+juk_SUMMARY="KDE jukebox, tagger and music collection manager"
+juk_CONTENTS="usr/bin/juk.exe usr/share/applications/kde4/juk.desktop
+	usr/share/dbus-1/interfaces/org.kde.juk.*
+	usr/share/doc/HTML/en/juk/ usr/share/doc/juk/
+	usr/share/icons/hicolor/*/apps/juk.* usr/share/kde4/apps/juk/
+	usr/share/kde4/services/ServiceMenus/jukservicemenu.desktop"
+kmix_SUMMARY="KDE audio mixer"
+kmix_CONTENTS="usr/bin/*kmix* usr/lib/kde4/kded_kmixd.dll
+	usr/lib/kde4/plasma_engine_mixer.dll
+	usr/share/applications/kde4/kmix.desktop
+	usr/share/autostart/*kmix*.desktop
+	usr/share/dbus-1/interfaces/org.kde.kmix.*
+	usr/share/doc/HTML/en/kmix/ usr/share/doc/kmix/
+	usr/share/icons/hicolor/*/apps/kmix.* usr/share/kde4/apps/kmix/
+	usr/share/kde4/apps/plasma/services/mixer.operations
+	usr/share/kde4/services/kded/kmixd.desktop
+	usr/share/kde4/services/plasma-engine-mixer.desktop
+	usr/share/kde4/services/kmixctrl_restore.desktop"
+kde4_multimedia_plugins_SUMMARY="KDE multimedia plugins"
+kde4_multimedia_plugins_CONTENTS="usr/bin/cygaudiocdplugins-4.dll
+	usr/bin/mplayerthumbsconfig.exe usr/include/kde4/audiocdencoder.h
+	usr/lib/kde4/ffmpegthumbs.dll usr/lib/kde4/*_audiocd.dll
+	usr/lib/kde4/kcm_cddb.dll usr/lib/kde4/libaudiocd_*
+	usr/lib/kde4/videopreview.dll usr/lib/libaudiocdplugins.dll.a
+	usr/share/doc/HTML/en/kioslave/ usr/share/kde4/apps/kconf_update/audiocd.*
+	usr/share/kde4/apps/kconf_update/kcmcddb-emailsettings.upd
+	usr/share/kde4/apps/kconf_update/upgrade-metadata.sh
+	usr/share/kde4/apps/konqsidebartng/virtual_folders/services/audiocd.desktop
+	usr/share/kde4/apps/solid/actions/solid_audiocd.desktop
+	usr/share/kde4/apps/videothumbnail/ usr/share/kde4/config.kcfg/audiocd_*
+	usr/share/kde4/config.kcfg/libkcddb.kcfg usr/share/kde4/config.kcfg/mplayerthumbs.kcfg
+	usr/share/kde4/services/audiocd.* usr/share/kde4/services/ffmpegthumbs.desktop
+	usr/share/kde4/services/libkcddb.desktop usr/share/kde4/services/videopreview.desktop"
+libkcddb4_SUMMARY="KDE CDDB library (runtime)"
+libkcddb4_CONTENTS="usr/bin/cygkcddb-4.dll"
+libkcddb_devel_SUMMARY="KDE CDDB library (development)"
+libkcddb_devel_REQUIRES="libkdecore-devel"
+libkcddb_devel_CONTENTS="usr/include/kde4/libkcddb/ usr/lib/libkcddb.*"
+libkcompactdisc4_SUMMARY="KDE CD library (runtime)"
+libkcompactdisc4_CONTENTS="usr/bin/cygkcompactdisc-4.dll"
+libkcompactdisc_devel_SUMMARY="KDE CD library (development)"
+libkcompactdisc_devel_REQUIRES="libkdecore-devel"
+libkcompactdisc_devel_CONTENTS="usr/include/kde4/libkcompactdisc/ usr/lib/libkcompactdisc.*"
+PKG_IGNORE="usr/share/doc/HTML/en/kcontrol/"
+
+CYGCMAKE_ARGS="-DWITH_Xine=OFF"

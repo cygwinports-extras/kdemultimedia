@@ -1,0 +1,38 @@
+Based on http://lists.kde.org/?l=kde&m=130849886323733&w=2
+
+--- origsrc/kdemultimedia-4.8.5/kioslave/audiocd/audiocd.cpp	2012-07-31 11:25:01.220888400 -0500
++++ src/kdemultimedia-4.8.5/kioslave/audiocd/audiocd.cpp	2013-01-29 00:03:54.359655200 -0600
+@@ -33,7 +33,7 @@ extern "C"
+ 	#include <cdda_interface.h>
+ 	#include <cdda_paranoia.h>
+ 	#undef private
+-	void paranoiaCallback(long, int);
++	void paranoiaCallback(long, paranoia_cb_mode_t);
+ 
+ 	KDE_EXPORT int kdemain(int argc, char ** argv);
+ }
+@@ -122,7 +122,6 @@ public:
+ 		for (int i = 0; i < drive->tracks; ++i)
+ 		{
+ 			if (disc_toc[i].dwStartSector != drive->disc_toc[i].dwStartSector ||
+-			    disc_toc[i].bFlags != drive->disc_toc[i].bFlags ||
+ 			    disc_toc[i].bTrack != drive->disc_toc[i].bTrack) return true;
+ 		}
+ 		return false;
+@@ -133,7 +132,6 @@ public:
+ 		for (int i = 0; i < drive->tracks; ++i)
+ 		{
+ 			disc_toc[i].dwStartSector = drive->disc_toc[i].dwStartSector;
+-			disc_toc[i].bFlags = drive->disc_toc[i].bFlags;
+ 			disc_toc[i].bTrack = drive->disc_toc[i].bTrack;
+ 		}
+ 	}
+@@ -1136,7 +1134,7 @@ void AudioCDProtocol::generateTemplateTi
+  * The higher the paranoia_read_limited_error the worse the problem is
+  * FYI: PARANOIA_CB_READ & PARANOIA_CB_VERIFY happen continusly when ripping
+  */
+-void paranoiaCallback(long, int function)
++void paranoiaCallback(long, paranoia_cb_mode_t function)
+ {
+ 	switch(function){
+ 		case PARANOIA_CB_VERIFY:

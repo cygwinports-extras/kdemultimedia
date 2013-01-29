@@ -1,5 +1,0 @@
-category: Audio KDE
-requires: libgcc1 libkdecore5 libphonon4 libQt3Support4 libQtCore4 libQtDBus4 libQtGui4 libQtXml4 libstdc++6 libtag1 libtunepimp5 phonon-kde
-external-source: kdemultimedia
-sdesc: "KDE jukebox, tagger and music collection manager"
-ldesc: "KDE multimedia suite"

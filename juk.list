@@ -1,8 +1,0 @@
-usr/bin/juk.exe
-usr/share/applications/kde4/juk.desktop
-usr/share/dbus-1/interfaces/org.kde.juk.*
-usr/share/doc/HTML/en/juk/
-usr/share/doc/juk/
-usr/share/icons/hicolor/*/apps/juk.*
-usr/share/kde4/apps/juk/
-usr/share/kde4/services/ServiceMenus/jukservicemenu.desktop

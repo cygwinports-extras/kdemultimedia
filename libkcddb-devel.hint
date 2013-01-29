@@ -1,5 +1,0 @@
-category: Audio KDE
-requires: libkcddb4 libkdecore-devel libQtCore4-devel
-external-source: kdemultimedia
-sdesc: "KDE CDDB library (development)"
-ldesc: "KDE multimedia suite"
